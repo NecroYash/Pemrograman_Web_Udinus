@@ -1,0 +1,144 @@
+body{
+    margin: 0;
+}
+
+/*Navbar*/
+
+nav{
+    width: 100%;
+    height: 68px;
+    background-color: turquoise;
+    margin-bottom: 24px;
+}
+nav .logo{
+    padding:12px 12px 24px 24px;
+    height: 48px;
+    float: left;
+}
+nav h3{
+    display: inline-block;
+    padding:12px;
+    margin: 0;
+    color:dodgerblue;
+}
+nav span{
+    display:inline-block;
+    padding: 12px 6px;
+    margin: 0;
+}
+nav a{
+    display: inline-block;
+    padding: 12px 6px 12px 6px;
+    margin: 0;
+    color: white;
+    text-decoration: none;
+    font-size: 20px;
+}
+nav .active{
+    border-bottom: 3px solid white;
+}
+nav .inactive{
+    opacity: 0.6;
+}
+nav .inactive:hover{
+    opacity: 0.9;
+    border-bottom: 3px solid white;
+}
+
+/*content*/
+
+.content{
+    width: 80%;
+    margin: 0 auto;
+    background-color: rgb(64, 224, 208, 0.4);
+    border-radius: 8px;
+    
+}
+.content h1{
+    padding: 24px 24px 16px 24px;
+    margin: 0;
+}
+.content p{
+    padding-bottom:16px;
+    margin: 0 24px;
+    letter-spacing:1.5px;
+    border-bottom: 5px double ghostwhite;
+}
+.form{
+    width: 100%;
+}
+.form h2{
+    text-align: center;
+    margin-bottom: 32px;
+}
+form{
+    margin: 24px;
+}
+form h3{
+    margin-bottom: 16px;
+}
+.group_form{
+    margin-bottom: 16px;
+}
+.group_form_last{
+    margin-bottom: 32px;
+}
+.form_site{
+    display: block;
+    border-radius: 8px;
+    width: 40%;
+    height: 24px;
+}
+
+label{
+    display: block;
+    margin-bottom: 8px;
+}
+.form_site_tmp{
+    width: 25%;
+    height: 24px;
+    border-radius: 8px;
+}
+.form_site_umur{
+    width: 35%;
+    height: 24px;
+    border-radius: 8px;
+    margin-right: 4px;
+}
+.lb_lk,.lb_pr{
+    display: inline;
+}
+select{
+    width: 40%;
+    height: 32px;
+}
+.confirm{
+    margin-bottom: 32px;
+}
+.buttons{
+    padding-bottom: 32px;
+}
+.submit{
+    margin-right: 24px;
+    padding: 9px;
+    border-radius: 8px;
+    color: white;
+    font-weight: bold;
+    background-color: #1DB954;
+    border: 1px solid rgba(0,0,0, 0.5);
+}
+.submit:hover{
+    padding: 7px;
+}
+.cancel{
+    padding: 8px;
+    border-radius: 8px;
+    color: #d9534f;
+    font-weight: bold;
+    background-color: white;
+    border: 2px solid #d9534f;
+}
+.cancel:hover{
+    padding: 7px;
+    border: 1px solid #d9534f;
+}

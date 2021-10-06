@@ -1,0 +1,183 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="ppdb.css">
+    <title>SMANDA | PPDB</title>
+</head>
+<body>
+    <!--NavBar-->
+    <nav>
+        <img src="smanda.png" alt="logo" class="logo">
+        <h3>SMA NEGERI 2 SEMARANG</h3>
+        <a href="Home.html" ><span class="inactive">Home</span></a>
+        <a href="#" ><span class="inactive">Berita</span></a>
+        <a href="#" ><span class="active">PPDB</span></a>
+        <a href="#" ><span class="inactive">Student</span></a>
+        <a href="#" ><span class="inactive">Teacher</span></a>
+    </nav>
+
+    <!--Content-->
+    <div class="content">
+        <div class="heading">
+            <h1>Registrasi PPDB Jalur Zonasi Tahun 2021</h1>
+            <p>Hai calon siswa-siswi SMAN 2 Semarang, untuk mendaftarkan diri kalian perlu mengisi Formulir di bawah ini agar dapat melanjutkan ke tahap penyeleksian Berkas Siswa. Harap diperhatikan untuk mengisi formulir tersebut dengan lengkap agar berkas dapat diproses.</p>
+        </div>
+        <!--Form-->
+        <div class="form">
+            <h2>Formulir PPDB Jalur Zonasi Tahun 2021</h2>
+            <form action="sucsess.php" method="POST">
+                <h3>Informasi Pendaftar</h3>
+                <div class="group_form">
+                    <label>NISN :</label>
+                    <input type="number" name="nisn" class="form_site" placeholder="Masukan NISN" required>
+                </div>
+                <div class="group_form">
+                    <label>Asal Sekolah :</label>
+                    <input type="text" name="asal_sekolah" class="form_site" placeholder="Masukan Nama Asal Sekolah" required>
+                </div>
+                <div class="group_form">
+                    <label>Tahun Lulus :</label>
+                    <input type="number" name="tahun_lulus" class="form_site" min="2019" max="2021" placeholder="Masukan Tahun Lulus" required>
+                </div>
+                <div class="group_form_last">
+                    <label>Lampirkan Fotocopy Ijazah (format file ".pdf") :</label>
+                    <input type="file" name="file_ijazah" class="form_site" required>
+                </div>
+                <h3>Data Calon Peserta</h3>
+                <div class="group_form">
+                    <label>Nama Lengkap :</label>
+                    <input type="text" name="nama_lengkap" class="form_site" placeholder="Masukan Nama Lengkap" required>
+                </div>
+                <div class="group_form">
+                    <label>NIK :</label>
+                    <input type="number" name="nik" class="form_site" placeholder="Masukan NIK" required>
+                </div>
+                <div class="group_form">
+                    <label>Tempat, Tanggal Lahir :</label>
+                    <input type="text" name="tempat_lahir" class="form_site_tmp" placeholder="Masukan Tempat Lahir" required>
+                    <span>,</span>
+                    <input type="date" name="tanggal_lahir" class="form_site_tgl" required>
+                </div>
+                <div class="group_form">
+                    <label>Umur :</label>
+                    <input type="number" name="umur" class="form_site_umur" placeholder="Masukan Umur Anda" required>
+                    <span>Tahun</span>
+                </div>
+                <div class="group_form">
+                    <label>Lampirkan Akte Kelahiran (format file ".pdf") :</label>
+                    <input type="file" name="file_akte" class="form_site" required>
+                </div>
+                <div class="group_form">
+                    <label>Jenis Kelamin :</label>
+                    <input type="radio" name="jenis_kelamin" class="form_site_radio" id="lk" required>
+                    <label for="lk" class="lb_lk">Laki-Laki</label>
+                    <input type="radio" name="jenis_kelamin" class="form_site_radio" id="pr" required>
+                    <label for="pr" class="lb_pr">Perempuan</label>
+                </div>
+                <div class="group_form">
+                    <label>Alamat :</label>
+                    <input type="text" name="alamat" class="form_site" placeholder="Masukan Alamat Rumah" required>
+                </div>
+                <div class="group_form">
+                    <label>Desa/Kel. :</label>
+                    <input type="text" name="desa" class="form_site" placeholder="Masukan Desa/Keluarahan Rumah" required>
+                </div>
+                <div class="group_form">
+                    <label>Kecamatan :</label>
+                    <input type="text" name="kecamatan" class="form_site" placeholder="Masukan Kecamatan Rumah" required>
+                </div>
+                <div class="group_form">
+                    <label>Kabupaten :</label>
+                    <input type="text" name="kabupaten" class="form_site" placeholder="Masukan Kabupaten Rumah" required>
+                </div>
+                <div class="group_form">
+                    <label>Provinsi :</label>
+                    <input type="text" name="provinsi" class="form_site" placeholder="Masukan Provinsi Rumah" required>
+                </div>
+                <div class="group_form_last">
+                    <label>Email Aktif :</label>
+                    <input type="email" name="email" class="form_site" placeholder="Masukan Email" required>
+                </div>
+                <h3>Data Orang Tua</h3>
+                <div class="group_form">
+                    <label>Lampirkan Kartu Keluarga (format file ".pdf") :</label>
+                    <input type="file" name="file_kk" class="form_site" required>
+                </div>
+                <div class="group_form">
+                    <label>Nomor Kartu Keluarga :</label>
+                    <input type="number" name="no_kk" class="form_site" placeholder="Masukan Nomor Kartu Keluarga" required>
+                </div>
+                <div class="group_form">
+                    <label>Nama Ayah Kandung :</label>
+                    <input type="text" name="nama_ayah" class="form_site" placeholder="Masukan Nama Ayah Kandung" required>
+                </div>
+                <div class="group_form">
+                    <label>Agama :</label>
+                    <select name="agama_ayah" required>
+                        <option>Islam</option>
+                        <option>Kristen</option>
+                        <option>Katholik</option>
+                        <option>Hindu</option>
+                        <option>Budha</option>
+                        <option>Kong hu cu</option>
+                    </select>
+                </div>
+                <div class="group_form">
+                    <label>Pekerjaan :</label>
+                    <input type="text" name="pekerjaan_ayah" class="form_site" placeholder="Masukan Pekerjaan Ayah" required>
+                </div>
+                <div class="group_form">
+                    <label>Nama Ibu Kandung :</label>
+                    <input type="text" name="nama_ibu" class="form_site" placeholder="Masukan Nama Ibu Kandung" required>
+                </div>
+                <div class="group_form">
+                    <label>Agama :</label>
+                    <select name="agama_ibu" required>
+                        <option>Islam</option>
+                        <option>Kristen</option>
+                        <option>Katholik</option>
+                        <option>Hindu</option>
+                        <option>Budha</option>
+                        <option>Kong hu cu</option>
+                    </select>
+                </div>
+                <div class="group_form">
+                    <label>Pekerjaan :</label>
+                    <input type="text" name="pekerjaan_ibu" class="form_site" placeholder="Masukan Pekerjaan Ibu" required>
+                </div>
+                <div class="group_form">
+                    <label>Alamat Orang Tua:</label>
+                    <input type="text" name="alamat_ortu" class="form_site" placeholder="Masukan Alamat Rumah Orang Tua" required>
+                </div>
+                <div class="group_form">
+                    <label>Desa/Kel. :</label>
+                    <input type="text" name="desa_ortu" class="form_site" placeholder="Masukan Desa/Keluarahan Rumah Orang Tua" required>
+                </div>
+                <div class="group_form">
+                    <label>Kecamatan :</label>
+                    <input type="text" name="kecamatan_ortu" class="form_site" placeholder="Masukan Kecamatan Rumah Orang Tua" required>
+                </div>
+                <div class="group_form">
+                    <label>Kabupaten :</label>
+                    <input type="text" name="kabupaten_ortu" class="form_site" placeholder="Masukan Kabupaten Rumah Orang Tua" required>
+                </div>
+                <div class="group_form_last">
+                    <label>Provinsi :</label>
+                    <input type="text" name="provinsi_ortu" class="form_site" placeholder="Masukan Provinsi Rumah Orang Tua" required>
+                </div>
+                <div class="confirm">
+                    <input type="checkbox" name="confirm" id="ok" required>
+                    <label for="ok" class="lb_lk">Saya mengisi formulir ini dengan sungguh-sungguh dan saya bertanggung jawab atas data yang saya masukan di atas.</label>
+                </div>
+                <div class="buttons">
+                    <button type="submit" class="submit">SUBMIT</button>
+                    <button type="reset" class="cancel">CANCEL</button>
+                </div>
+            </form>
+        </div>
+    </div>
+</body>
+</html>
