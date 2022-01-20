@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>SinggahSini.com</title>
+    <link rel="stylesheet" href="asset/styleing/style.css">
+  </head>
+  <body>
+    <nav>
+      <div class="header-logo">
+          <img src="asset/web_img/SinggahSini.png" alt="logo">
+      </div>
+      <div class="header-list">
+        <ul>
+          <li><a href="jual.html" class="inactive">Dijual</a></li>
+          <li><a href="sewa.html" class="inactive">Disewa</a></li>
+          <li><a href="index.html" class="inactive">Properti Baru</a></li>
+          <li><a href="tentang.html" class="inactive">Tentang Kami</a></li>
+        </ul>
+      </div>
+      <div class="header-login">
+          <a href="login.html">LOGIN</a>
+      </div>
+    </nav>
+    <main class="form">
+        <div class="box-login">
+            <h3 style="text-align: center;">Login</h3>
+            <form>
+                <div class="group_form">
+                    <label>Email :</label>
+                    <input type="email" id="email" class="form_site" placeholder="Masukan Email" required>
+                </div>
+                <div class="group_form">
+                    <label>Password :</label>
+                    <input type="password" id="password" class="form_site" placeholder="Masukan Password" required>
+                </div>
+                <div class="buttons">
+                    <button type="submit" class="daftar" onclick="login()">Login</button>
+                    <button class="cancel" onclick="pindah('index.html')">Home</button>
+                </div>
+            </form>
+            <p style="text-align: center;margin-top: 16px;">Belum memiliki akun? <a href="register.html">Daftar disini!</a></p>
+        </div>
+    </main>
+    <footer>
+      <h2>Copyright © 2021 - SinggahSini. All Right Reserved.</h2>
+    </footer>
+
+    <script>
+        function login(){
+            var email = document.getElementById('email').value;
+            var password = document.getElementById('password').value;
+            if(email=="" || password==""){
+                alert("Tolong isi seluruh Form!");
+            } else if(password != "admin"){
+                alert("password salah");
+            } else{
+                alert("Berhasil Login");
+            }
+        }
+        function pindah(url){
+            window.location.replace(url);
+        }
+    </script>
+  </body>
+</html>
